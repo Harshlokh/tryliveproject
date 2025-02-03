@@ -12,6 +12,7 @@ function Login() {
 
     const navigate = useNavigate();
 
+    
     const handleChange = (e) => {
         const { name, value } = e.target;
         console.log(name, value);
@@ -27,7 +28,7 @@ function Login() {
             return handleError('email and password are required')
         }
         try {
-            const url = `https://deploy-mern-app-1-api.vercel.app/auth/login`;
+            const url = `https://backend-ui-xi.vercel.app/auth/login`;
             const response = await fetch(url, {
                 method: "POST",
                 headers: {
